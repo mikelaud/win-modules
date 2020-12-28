@@ -1,4 +1,4 @@
 # win-modules
 
 * logger
-  * Docs: https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log
+  * dev-docs: https://docs.microsoft.com/en-us/windows/win32/tracelogging/trace-logging-portal

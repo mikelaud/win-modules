@@ -4,9 +4,9 @@
 
 
 class Logger {
-public: // iface
+public: // interface
 	void log();
-public: // ctor
+public: // factory
 	Logger();
 public: // Rule of Zero (Rule of the Five defaults)
 	~Logger() = default;
@@ -17,5 +17,6 @@ public: // Rule of Zero (Rule of the Five defaults)
 	Logger& operator=(const Logger&) = default;
 	Logger& operator=(Logger&&) = default;
 };
+
 
 #endif // LOGGER_HPP_

@@ -139,11 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="LoggerDemo.cpp" />
+    <ClCompile Include="LoggerHolder.cpp" />
+    <ClCompile Include="LoggerWin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="LoggerHolder.hpp" />
+    <ClInclude Include="LoggerWin.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

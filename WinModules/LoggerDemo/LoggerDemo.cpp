@@ -5,6 +5,16 @@ int main()
 {
     Logger logger;
     logger.log();
+
+    Logger logger2 = Logger();
+    logger2.log();
+
+    Logger logger3 = logger2;
+    logger3.log();
+
+    logger3 = logger;
+    logger3.log();
+
     return 0;
 }
 

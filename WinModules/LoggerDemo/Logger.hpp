@@ -2,14 +2,27 @@
 #ifndef LOGGER_HPP_
 #define LOGGER_HPP_
 
+#include "LoggerHolder.hpp"
+
+#include <memory>
+
 
 class Logger {
+
+private: // fields
+
+	std::shared_ptr<LoggerHolder> mHolder;
+
 public: // interface
-	void log();
+
+	inline void log() { mHolder->log(); }
+
 public: // factory
-	Logger();
-public: // Rule of Zero (Rule of the Five defaults)
+
+	Logger() : mHolder(std::make_shared<LoggerHolder>()) {}
 	~Logger() = default;
+
+public: // factory (default)
 
 	Logger(const Logger&) = default;
 	Logger(Logger&&) = default;

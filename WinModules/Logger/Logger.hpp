@@ -11,15 +11,15 @@ class Logger {
 
 private: // fields
 
-	std::shared_ptr<LoggerHolder> mHolder;
+	std::shared_ptr<LoggerHolder> mLoggerHolder;
 
 public: // interface
 
-	inline void log() { mHolder->log(); }
+	inline void log() { mLoggerHolder->log(); }
 
 public: // factory
 
-	Logger() : mHolder(std::make_shared<LoggerHolder>()) {}
+	Logger() : mLoggerHolder(std::make_shared<LoggerHolder>()) {}
 	~Logger() = default;
 
 public: // factory (default)
